@@ -8,6 +8,13 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+<script src="//d3js.org/d3.v4.min.js"></script>
+
+	<!-- Controllers -->
+  <!-- <script src="./src/js/controllers/imageController.js"></script> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px|hJosefin+Slab|Open+Sans+Condensed:300" rel="stylesheet">
+
 	<style type="text/css">
 		.topcorner{
 			position:absolute;
@@ -17,16 +24,72 @@
 		.row{
 			margin-top: 50px;
 		}
+
+		ul li ul {
+		    display: none;
+		} 
+
+		/*a {
+		    color: red;
+		}*/
+
+		#jscircle{
+			color: #f1e05a;
+		}
+		#csscircle{
+			color: #563d7c;
+		}
+		#htmlcircle{
+			color: #e34c26;
+		}
+
+		.panel-heading{
+			/*font-family: 'Josefin Slab', serif;*/
+			font-family: 'Slabo 27px', serif;
+			/*background-color: #D1E751 !important;*/
+		}
+
+		.panel-body{
+			font-family: 'Open Sans Condensed', sans-serif;
+		}
+
+		.nav-tabs{
+			font-family: 'Slabo 27px', serif;
+		}
+
+		p{
+			font-family: 'Open Sans Condensed', sans-serif;
+		}
+
+		h2{
+			font-family: 'Slabo 27px', serif;
+		}
+
+		a {
+    		color: #4DBCE9;
+		}
+
+		body{
+			/*background-color: #E9E9E9;*/
+		}
+
+		#check{
+			float: right;
+		}
 	</style>
 
 </head>
 <body>
-
+<script type="text/javascript">
+	$('.list > li a').click(function() {
+        $(this).parent().find('ul').toggle();
+    })
+</script>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
 				<center>
-				<img src="datme.JPG" class="img-responsive img-circle">
+				<img src="datme.JPG" class="img-responsive img-circle" id="mainImage">
 				<h2>Isabel Lindmae</h2>
 				<p>
 					Alumni Liaison Coordinator of the ACM<br>
@@ -39,7 +102,7 @@
 			</div>
 			<div class="col-md-6">
 				<ul class="nav nav-tabs">
-					<li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+					<li class="active" id="backHome"><a data-toggle="tab" href="#home">Home</a></li>
 					<li><a data-toggle="tab" href="#menu1">School Projects</a></li>
 					<li><a data-toggle="tab" href="#menu2">Work Projects</a></li>
 					<li><a data-toggle="tab" href="#menu3">Personal Projects</a></li>
@@ -52,34 +115,90 @@
 							<br>Languages: English, Estonian, French</p>
 						</div>
 					<div id="menu1" class="tab-pane fade">
-							<h3>GarageBuddy</h3>
-							<p>An android app for hosting and finding nearby garage sales. 
-								<br>Served as project manager for team of 3, created scheduling, etc.
-								<br><a hred="https://github.com/Lindmae/GarageBuddy">GitHub Link</a></p>
+						<div class="panel-group">
+						  <div class="panel panel-default">
+						    <div class="panel-heading"  id="garageBuddy">
+						      <h4 class="panel-title">
+						        <a data-toggle="collapse" href="#collapse10">GarageBuddy  <span id="check" class="glyphicon glyphicon-chevron-down"></span></a> 
+						      </h4>
+						    </div>
+						    <div class="panel-body">An android app for hosting and finding nearby garage sales.</div>
+						    
+						    <div id="collapse10" class="panel-collapse collapse">
+						      <div class="panel-body"> 
+								Served as project manager for team of 3, created scheduling, etc.<br>
+								<a hred="https://github.com/Lindmae/GarageBuddy">GitHub Link</a></div>
+						      <div class="panel-footer text-right">
+						      	<span id="jscircle">&#x25CF;</span><span id="csscircle">&#x25CF;</span><span id="htmlcircle">&#x25CF;</span> 
+						      </div>
+						    </div>
+						  </div>
+
+
+						</div>
 					</div>
 					<div id="menu2" class="tab-pane fade">
-								<h3>Englewood Social Services Finder</h3>
-								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
-									<br><a hred="https://github.com/Lindmae/GarageBuddy">GitHub Link</a></p>
-									<br>
+						<div class="panel-group">
+						  <div class="panel panel-default">
+						    <div class="panel-heading"  id="englewood">
+						      <h4 class="panel-title">
+						        <a data-toggle="collapse" href="#collapse1">Englewood Social Services Finder  <span id="check" class="glyphicon glyphicon-chevron-down"></span></a> 
+						      </h4>
+						    </div>
+						    <div class="panel-body">A mobile friendly java web application for helping youth in the Greater Englewood area of Chicago find social services near them. Integrates location services.</div>
+						    
+						    <div id="collapse1" class="panel-collapse collapse">
+						      <div class="panel-body"><a hred="https://github.com/Lindmae/GarageBuddy">GitHub Link</a></div>
+						      <div class="panel-footer text-right">
+						      	<span id="jscircle">&#x25CF;</span><span id="csscircle">&#x25CF;</span><span id="htmlcircle">&#x25CF;</span> 
+						      </div>
+						    </div>
+						  </div>
 
-									<h3>Flow Visualizer</h3>
-									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
-										<br><a hred="https://github.com/Lindmae/GarageBuddy">GitHub Link</a></p>
-										<br>
+						  <div class="panel panel-default">
+						    <div class="panel-heading"  id="flowvis">
+						      <h4 class="panel-title">
+						        <a data-toggle="collapse" href="#collapse2">Flow Visualizer  <span id="check" class="glyphicon glyphicon-chevron-down"></span></a> 
+						      </h4>
+						    </div>
+						    <div class="panel-body">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</div>
+						    
+						    <div id="collapse2" class="panel-collapse collapse">
+						      <div class="panel-body">Panel Body</div>
+						      <div class="panel-footer text-right">
+						      	<span id="jscircle">&#x25CF;</span><span id="csscircle">&#x25CF;</span><span id="htmlcircle">&#x25CF;</span> 
+						      </div>
+						    </div>
+						  </div>
 
-										<h3>Vast Project</h3>
-										<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
-											<br><a hred="https://github.com/Lindmae/GarageBuddy">GitHub Link</a></p>
+						  <div class="panel panel-default">
+						    <div class="panel-heading"  id="vast">
+						      <h4 class="panel-title">
+						        <a data-toggle="collapse" href="#collapse3">Vast project  <span id="check" class="glyphicon glyphicon-chevron-down"></span></a> 
+						      </h4>
+						    </div>
+						    <div class="panel-body">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</div>
+						    
+						    <div id="collapse3" class="panel-collapse collapse">
+						      <div class="panel-body">Panel Body</div>
+						      <div class="panel-footer text-right">
+						      	<span id="jscircle">&#x25CF;</span><span id="csscircle">&#x25CF;</span><span id="htmlcircle">&#x25CF;</span> 
+						      </div>
+						    </div>
+						  </div>
+
+
+						</div>
 					</div>
 					<div id="menu3" class="tab-pane fade">
-											<h3>Menu 3</h3>
-											<p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+						<h3>Menu 3</h3>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
+	<script src="./src/js/controllers/imageController.js"></script>
 
 </body>
 </html>
