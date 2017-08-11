@@ -21,7 +21,7 @@
 
   function englewoodClicked() {
     console.log("clicked!");
-    document.getElementById("mainImage").src = "http://www.qygjxz.com/data/out/193/3856596-random-image.png";
+    document.getElementById("mainImage").src = "/Englewood.png";
   }
 
   function homeClicked() {
