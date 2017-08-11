@@ -22,11 +22,13 @@
   function englewoodClicked() {
     console.log("clicked!");
     document.getElementById("mainImage").src = "/Englewood.png";
+    document.getElementById("mainImage").classList.remove("img-circle");
   }
 
   function homeClicked() {
     console.log("clicked!");
     document.getElementById("mainImage").src = "/datme.JPG";
+    document.getElementById("mainImage").classList.add("img-circle");
   }
 
   initalize();
