@@ -17,20 +17,27 @@
       padding-top:50px;
       height:550px;
       color: #000; 
-      /*background-image: url("./AnalyticsBanner.png");*/
-      /*background-size: cover;*/
+      background-image: url("./Nasty.png");
+      background-size: cover;
       background-color: #cccccc;
     }
     #aboutPage {
       padding-top:25px;
-      height:550px;
+      height:350px;
       color: #000; 
-      background-color: white;
+      background-color: #bbbbbb;
 
     }
 
-    #aboutPage h1,h2,h3,h4{
+    /*#aboutPage h1,h2,h3,h4{
       color: #bbbbbb !important;
+    }*/
+
+    #videoPage {
+      padding-top:50px;
+      height:450px;
+      color: black; 
+      background-color: white;
     }
 
     #projectPage {
@@ -81,6 +88,7 @@
       color: white;
     }
 
+
     #modalDivider {
       margin-top: 15px;
       margin-bottom: 15px;
@@ -98,6 +106,11 @@
         }
       }
     }
+
+  /*.li > .active > a{
+    border-bottom: 2px solid black;
+    background-color: red !important;
+  }*/
 
   .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
     /*border-bottom: 2px solid black;*/
@@ -122,6 +135,8 @@
     color: #aaaaaa;
   }
 
+
+
 </style>
 </head>
 <body>
@@ -141,6 +156,7 @@
           <ul class="nav navbar-nav">
             <li><a href="./index.html">Back</a></li>
             <li><a href="#aboutPage">About</a></li>
+            <li><a href="#videoPage">Demo</a></li>
             <li><a href="#contactPage">Contact</a></li>
           </ul>
         </div>
@@ -154,8 +170,10 @@
   <div id="aboutPage" class="container-fluid">
   <div class="row">
       <div class="col-md-2"></div>
-      <div class="col-md-8">
-          <center><h1>Garage Buddy</h1></center><br>
+      <div class="col-md-8"><br>
+          <center>
+          <h1>Garage Buddy</h1></center><br>
+          <i>In progress...</i><br>
         <p><b>Objective:</b> Create a tool for finding and hosting local garage sales.</p>
         <p>An Android application that allows a user to host a garage sale or find a garage sale being hosted near them. Served as the project manager and lead a team of three. Utilizing version control, debug testing, and agile development. The final project for Software Engineering I course. </p>
         <center><p><b>Languages:</b> Java</p><br>
@@ -168,6 +186,18 @@
         <div class="col-md-2"></div>
       </div>
     </div>
+  </div>
+  <div id="videoPage" class="container-fluid text-center">
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6"><br>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="//www.youtube.com/embed/2xF9aJfq8z4"></iframe>
+        </div>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+
   </div>
   <div id="contactPage" class="container-fluid text-center">
 
