@@ -13,77 +13,27 @@
     body {
       position: relative; 
     }
-    #mainPage {
+    #project1 {
       padding-top:50px;
       height:550px;
       color: #000; 
-      background-image: url("./UIC.jpg");
-      background-size: cover;
       background-color: #cccccc;
     }
-    #aboutPage {
+    #project2 {
       padding-top:25px;
-      height:350px;
+      height:550px;
       color: #000; 
-      background-color: #bbbbbb;
-
+      background-color: white;
     }
 
-    #assignment1 {
-      padding-top:50px;
-      height:300px;
-      color: black; 
-      background-color: #aaaaaa;
-
+    #project2 h1,h2,h3,h4{
+      color: #bbbbbb !important;
     }
 
-    #assignment2 {
-      padding-top:50px;
-      height:300px;
-    }
-    
-    #assignment3 {
-      padding-top:50px;
-      height:300px;
-      color: #000; 
-      background-color: #bbbbbb;
+    #project1 h3,h4{
+      color: white !important;
     }
 
-    #assignment2 h1{
-      color: #aaaaaa;
-    }
-
-    #assignment5 h1{
-      color: #aaaaaa;
-    }
-
-    #assignment5 {
-      padding-top:50px;
-      height:300px;
-    }
-
-    #assignment1 a{
-      color: white;
-    }
-
-    #assignment4 a{
-      color: white;
-    }
-    
-    #assignment4 {
-      padding-top:50px;
-      height:300px;
-      color: black; 
-      background-color: #aaaaaa;
-
-    }
-
-    #projectPage {
-      padding-top:10%;
-      height:750px;
-      color: black;
-      background-color: #cccccc;
-    }
     #contactPage {
       padding-top:50px;
       height:750px;
@@ -122,17 +72,13 @@
     }
 
     h1,h2,h3,h4{
-      font-family: 'Slabo 27px', serif;
-      color: white;
+      font-family: 'Slabo 27px', serif;\
     }
 
-    #aboutPage a{
-      color: white;
-    }
-    
-    #assignment3 a{
-      color: white;
-    }
+    img {
+    max-width: 60%;
+    max-height: 60%;
+}
 
     #modalDivider {
       margin-top: 15px;
@@ -200,16 +146,7 @@
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
             <li><a href="./index.html">Back</a></li>
-            <li><a href="#aboutPage">About</a></li>
-            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Assignments <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#assignment1">Assignment 1</a></li>
-                <li><a href="#assignment2">Assignment 2</a></li>
-                <li><a href="#assignment3">Assignment 3</a></li>
-                <li><a href="#assignment4">Assignment 4</a></li>
-                <li><a href="#assignment5">Assignment 5</a></li>
-              </ul>
-            </li>
+            <li><a href="#project1">Info</a></li>
             <li><a href="#contactPage">Contact</a></li>
           </ul>
         </div>
@@ -217,54 +154,30 @@
     </div>
   </nav>    
 
-  <div id="mainPage" class="container-fluid">
-
-  </div>
-  <div id="aboutPage" class="container-fluid">
-  <div class="row">
-      <div class="col-md-2"></div>
-      <div class="col-md-8"><br>
-          <center>
-          <h1>CS 491: Virtual and Augmented Reality</h1></center><br>
-
-        <p><b>Objective:</b> Obtain expertise in the fields of Augmented and Virtual reality.</p>
-        <p>Fall 2017 course being taken at the University of Illinois at Chicago, taught by Andrew Johnson. </p><br>
-        <center><p><b>Languages:</b> Java</p>
-        <p>Course website: <a href="https://www.evl.uic.edu/aej/491/">https://www.evl.uic.edu/aej/491/</a></p>
-        </center>
-          <br>
-          </p>
-          
-        </div>
-        <div class="col-md-2"></div>
-      </div>
+  <div id="project1" class="container-fluid">
+    <div class="row">
+    <div class="col-md-4"><br><br><center>
+      <img src="./Ikea1.jpg" /><br><br>
+      <img src="./Ikea2.jpg" /></center>
     </div>
+    <div class="col-md-8"><br><br>
+      <h3>
+        Assignment 5: AR apps
+      </h3>
+      <p>
+       I think AR applications will be useful for house decorating and planning in the future. Buying expensive furniture, setting it up, and realizing that it just doesn’t fit or doesn’t look right in the room can be frustrating and a waste of time. Using AR to see the actual size of the object, its relative size to other furniture in your house, or even looking at the color can all be helpful ways of reducing the risk of buying and setting up furniture. <br><br>
+
+Furthermore, if someone was for example looking for off-campus housing and wanted to see if they can fit both their bed and desk in the room, before signing the lease, a AR app would be useful and efficient vs using a traditional tape measure. A tape measure might be able to tell you how one piece of furniture fits in a space but what if a AR app could place multiple pieces of furniture in the same space so you can see how much leg space or how easy it is to move in the space with the furniture. It doesn’t have to be limited to just furniture either, things like sink height or counter height can also be planned with the app. For someone who is shorter or taller there is a huge difference in where a sink is placed or a shower head is placed. Things like plumbing are expensive to fix after so being able to correctly plan the height of things before building would be useful. Sure if you were there in real life you could simply mark your hip height on the wall for the sink but what if you are not able to physically be there? What if you're building a house but are out of the country and your construction crew calls and asks for a height? I think it would be really cool if you could set your height or point of view in AR and then your construction worker could see what the height of the sink should be relative to your size, without you having to even be present.
+<br><br>
+
+For using AR outside the house I think jobs that would benefit from it are jobs like architects, gardeners, or urban planners. A gardener can use AR to plan the size of each plot of land and then choose what plants go where, being able to see the amount of room that each plant requires to thrive and then being able to optimally plant their flowers or crops. An architect could see how many houses could fit on a street vs how many townhouses. An urban planner could decide if a park would fit in a space in the city and if so, how many swings? How many tables?
+<br><br>
+
+I think AR has great use for all professions but mostly benefits those who are planning a space and need to see objects in relative size to each other. All in all, I would definitely use AR to decorate my house and use it to make my profession more efficient, if possible.<br><br>
+      </p>
+    </div>
+      </div>
   </div>
-  </div>
-  <div id="assignment1" class="container-fluid">
-    <center><h1>Assignment 1</h1><br>
-    <p>Comparison of the advantages and disadvantages of different VR and AR platforms.</p>
-    <p><i><a href="./Advantages.pdf">Click here for pdf.</a></p></i></center>
-  </div>
-  <div id="assignment2" class="container-fluid">
-    <center><h1>Assignment 2</h1><br>
-      <p>How helpful and effective is google translate? Spoiler alert: not very</p>
-    <p><i><a href="./Assignment2.pdf">Click here for pdf.</a></p></i></center>
-  </div>
-  <div id="assignment3" class="container-fluid">
-    <center><h1>Assignment 3</h1><br>
-      <p>I shrunk the perspective of the user and expanded my own.</p>
-    <p><i><a href="./Assignment3.pdf">Click here for pdf.</a></p></i></center>
-  </div>
-  <div id="assignment4" class="container-fluid">
-    <center><h1>Assignment 4</h1><br>
-      <p>I look at the work of two other students and comment on it.</p>
-    <p><i><a href="./P2D.html">Click here for more.</a></p></i></center>
-  </div>
-  <div id="assignment5" class="container-fluid">
-    <center><h1>Assignment 5</h1><br>
-      <p>I experimented with AR using the IKEA app and reflect on possible uses.</p>
-    <p><i><a href="./A5.html">Click here for more.</a></p></i></center>
   </div>
   <div id="contactPage" class="container-fluid text-center">
 
