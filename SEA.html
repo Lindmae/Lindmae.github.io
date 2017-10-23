@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Isabel Lindmae</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/20d7f0d9a7.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px|hJosefin+Slab|Open+Sans+Condensed:300" rel="stylesheet">
+  <style>
+    body {
+      position: relative; 
+    }
+    #mainPage {
+      padding-top:50px;
+      height:550px;
+      color: #000; 
+      background-image: url("./spacecover.png");
+      background-size: cover;
+      background-color: #cccccc;
+    }
+    #aboutPage {
+      padding-top:25px;
+      height:350px;
+      color: #000; 
+      background-color: white;
+
+    }
+
+    #aboutPage h1,h2,h3,h4{
+      color: #bbbbbb !important;
+    }
+
+    #projectPage {
+      padding-top:10%;
+      height:750px;
+      color: black;
+      background-color: #cccccc;
+    }
+
+    #usePage {
+      padding-top:25px;
+      height:750px;
+      color: black;
+      background-color: #aaaaaa;
+    }
+
+    #discussion {
+      padding-top:25px;
+      height:1025px;
+      color: black;
+      background-color: #cccccc;
+    }
+
+    #videoPage {
+      padding-top:50px;
+      height:450px;
+      color: black; 
+      background-color: #bbbbbb;
+    }
+
+    #contactPage {
+      padding-top:50px;
+      height:750px;
+      color: black; 
+      background-color: #cccccc;
+    }
+    
+    .navbar{
+      background-color: #dddddd;
+      font-family: 'Open Sans Condensed', sans-serif;
+      color: white;
+      border-bottom: 0px;
+    }
+
+    .navbar-nav {
+      float:none;
+      margin:0 auto;
+      display: block;
+      text-align: center;
+    }
+
+    .navbar-nav > li {
+      display: inline-block;
+      float:none;
+    }
+
+    #vertical{
+      position:relative;
+      top:30%;    
+      left:0;
+      width:100%;
+    }
+
+    p{
+      font-family: 'Open Sans Condensed', sans-serif;
+    }
+
+    h1,h2,h3,h4{
+      font-family: 'Slabo 27px', serif;
+      color: white;
+    }
+
+
+    #modalDivider {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      div {
+        hr {
+          margin-top: 10px;
+        }
+      }
+      .divider-text {
+        margin: inherit;
+      }
+      @media (min-width: 768px) {
+        .divider-text {
+          margin: 0;
+        }
+      }
+    }
+
+  /*.li > .active > a{
+    border-bottom: 2px solid black;
+    background-color: red !important;
+  }*/
+
+  .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+    /*border-bottom: 2px solid black;*/
+    background-color: #cccccc !important;
+  }
+
+  /*img {
+    opacity: 0.5;
+    filter: alpha(opacity=50); 
+  }
+
+  img:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+  }*/
+
+  a:hover {
+    opacity: .5;
+  }
+
+  a{
+    color: #aaaaaa;
+  }
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+</style>
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <!-- <a class="navbar-brand" href="#">Isabel Lindmae</a> -->
+      </div>
+      <div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="./index.html">Back</a></li>
+            <li><a href="#aboutPage">About</a></li>
+            <li><a href="#usePage">Uses</a></li>
+            <li><a href="#videoPage">Demo</a></li>
+            <li><a href="#contactPage">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>    
+
+  <div id="mainPage" class="container-fluid">
+
+  </div>
+  <div id="aboutPage" class="container-fluid">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8"><br>
+        <center><h1>Space Explorer Application</h1></center><br>
+        <p><b>Team members:</b> Kandyce Burks & Isabel Lindmae</p>
+        <p><b>Objective:</b> Explore and analyze 40 planetary systems in VR with the use of a VIVE headset.</p>
+        <p>How to use and download goes here.</p>
+        <center><p><b>Created in:</b> Unity, using C#</p><br>
+          <a href="http://purgato.evl.uic.edu/" target="_blank">Website</a> | 
+          <a href="https://github.com/uic-evl/EnglewoodSocialServices" target="_blank">Github</a></center>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+  </div>
+  <div id="usePage" class="container-fluid">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8"><br>
+        <center><h1>Application uses</h1><br>
+        <p>Using SEA, the user is able to do the following: </p></center>
+        <h5>Freely explore systems.</h5>
+        <p>Fly through the universe and explore 40 unique systems.</p>
+        <h5>Compare systems and planets.</h5>
+        <p>Using the VIVE headset, the user can get a good grasp of the sheer size of planets. When Earth feels like a small beach ball, you can gain a lot of perspective. One system might be tightly condensed, with 3 planets orbiting each other or it could be much wider and sparse. Within a system itself, there is also disparity. Mercury looks almost like a moon next to Earth.</p>
+        <h5>Discover habitable zones.</h5>
+        <p>Each system contains two green rings, signifying the habitable zone within the system. A circumstellar habitable zone is the range in which water can be sustained on a given planet, it is where there is sufficent atmospheric pressure and it it not too hot or cold, and potentailly life could survive. That is why it is sometimes referred to as the Goldilocks Zone, as it cannot be too hot or cold but just right.</p>
+        <h5>Adjust the rate at which time passes.</h5>
+        <p>Using the slider on the top right corner of the user interface will adjust the rate of time passing. This can allow you to see planets with a much larger orbit complete a full orbit around their respective suns. It is helpful for also getting a good visualization at how slow some planets move in comparison to others, and how long a year on that planet would be.</p>
+        <h5>Adjust the scale of the planets.</h5>
+        <p>Using the slider on the top left corner of the user interface will adjust the scale of all the planets (and 2D view) that are currently in view.</p>
+        <h5>Explore 4 predfined sets.</h5>
+        <p>Explore and learn about the solar system with the largest planets, with the most planets (outside of ours), with the Brightest stars, and solar systems with the longest orbital periods.</p>
+        <h5>Learn about each system and it's planets.</h5>
+        <p>Learn about each systems: name, distance from our solar system in light years, the type of star, and how the planets were discovered and names of each individual planet.</p>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+  </div>
+  <div id="discussion" class="container-fluid">
+    <div class="row">
+    <div class="col-md-4"><br><br><center>
+      <img src="./earth.png" /><br>Fig 1: Earth in orbit<br><br>
+      <img src="./mars.png" /><br>Fig 2: Mars in orbit<br><br>
+      <img src="./habitable.png" /><br>Fig 3: Another habitable planet<br><br></center>
+    </div>
+    <div class="col-md-8"><br><br><br><br>
+      <h3>
+        Discussion
+      </h3>
+      <p>hen we first ran the application, I was completely taken aback by the sheer amount of space that planetary systems make up. Though we only have 40 systems within the application, you get an immediate sense of wonder at the idea of how many systems exist and how large the universe truly is. I learned a lot about habitable zones, orbits, interesting systems, and the size of planets themselves.<br><br>
+  Immediately, the first planet I wanted to look at was Earth. To my surprise, Earth isn’t smack in the middle of the habitable zone of our Sun. In fact it is right on the edge, teetering close to being out of the “Goldilocks Zone” and much too close to the sun for comfort. (See figure 1) That itself made me realize there is a pretty sizable range within our system for the habitable zone. It almost looked like Mars was equidistant from the outer habitable ring as Earth was close to the inner habitable ring. (See figure 2) A couple hundred thousand miles more and Mars itself would be habitable. I did somewhat have a grasp on that, as there has been interest in colonizing Mars these past couple of years, and I assume it is because Mars isn’t beyond incredibly cold. Upon seeing this, I looked up the distance that Mars was from Earth, and it was 54.6 million kilometers! Oh man did that change my perspective. What felt like such a small distance in VR was way larger than I could have imagined. With this new view, when I put the goggles back on I again had a sense of wonder for how large the universe truly is. Well what about the temperature on Mars? I thought it must be much colder than I anticipated but looking that up again, the high on Mars is actually 20 degrees Celsius which means the sun must radiate an astronomical amount of heat! <br><br>
+  Taking a step back (literally), I decided to look at habitable zones on other planetary systems. I did end up finding one planet in the 24 sex planetary system. (See figure 3) I also began to notice that some systems had very small habitable zones, which I assumed was due to the low heat that the sun for that system itself produced.  (See figure 6)<br><br>
+  As for orbits, there are some that are huge (like our own Neptune) and some that are very very small, such as the planet in the HD219828 system (See figure 5). I had always assumed that larger planets had larger orbits in general but we can see that is not the case.<br><br>
+  Using the buttons built into our UI I was also able to explore 4 predefined sets; the solar system with the largest planets, with the most planets (outside of ours), with the Brightest stars, and solar systems with the longest orbital periods — meaning the longest years. (See figure 4).<br><br>
+  This application allowed me to explore space in ways I had never imagined before. It was a great learning experience, from the small details to the larger details, like the scale of space and planets in comparison to ourselves!
+
+      </p>
+    </div>
+      </div>
+      <div class="row">
+        <div class ="col-md-4">
+          <img src="./fact.png" /><br><center>Fig 4: Facts about the largest planetary system</center>
+        </div>
+        <div class ="col-md-4">
+          <img src="./orbit.gif" /><br><center>Fig 5: A very small orbit</center>
+        </div>
+        <div class ="col-md-4">
+          <img src="./smallhabitable.png" /><br><center>Fig 6: A small habitable zone</center>
+        </div>
+  </div>
+  </div>
+  <div id="videoPage" class="container-fluid text-center">
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6"><br>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="//www.youtube.com/embed/WaGd18UZQXo"></iframe>
+        </div>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+
+  </div>
+
+  <div id="contactPage" class="container-fluid text-center">
+
+    <!-- <p>Click on the different Section links in the navbar to see the smooth scrolling effect.</p> -->
+    <div class="row" id="vertical">
+      <h1>Contact me</h1>
+      <div class="row text-center" id="modalDivider">
+        <div class="col-md-4"><hr></div>
+        <div class="col-md-4 divider-text"><p><i>The best place to contact me is thorugh email!</i></p></div>
+        <div class="col-md-4"><hr></div>
+      </div>
+      <br><br>
+      <div class="col-sm-3"></div>
+      <div class="col-sm-2">
+        <a href="mailto:me@IsabelLindmae.com" title="Email"><i class="fa fa-envelope fa-5x" aria-hidden="true"></i></a>
+
+      </div>
+      <div class="col-sm-2">
+        <a href="https://www.linkedin.com/in/IsabelLindmae/" title="LinkedIn"><i class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i></a>
+      </div>
+      <div class="col-sm-2">
+        <a href="./Resume.pdf" title="Print Resume"><i class="fa fa-print fa-5x" aria-hidden="true"></i></a>
+
+      </div>
+      <div class="col-sm-3"></div>
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function(){
+  // Add scrollspy to <body>
+  $('body').scrollspy({target: ".navbar", offset: 50});   
+
+  // Add smooth scrolling on all links inside the navbar
+  $("#myNavbar a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }  // End if
+  });
+});
+</script>
+
+</body>
+</html>
