@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Isabel Lindmae</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/20d7f0d9a7.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px|hJosefin+Slab|Open+Sans+Condensed:300" rel="stylesheet">
+  <style>
+    body {
+      position: relative; 
+    }
+    #mainPage {
+      padding-top:50px;
+      height:550px;
+      color: #000; 
+      background-image: url("./spacecover.png");
+      background-size: cover;
+      background-color: #cccccc;
+    }
+    #aboutPage {
+      padding-top:25px;
+      height:450px;
+      color: #000; 
+      background-color: #dddddd;
+
+    }
+
+    #aboutPage h1,h2,h3,h4{
+      color: #bbbbbb !important;
+    }
+
+    #imagePage {
+      padding-top:5%;
+      height:650px;
+      color: black;
+      background-color: #cccccc;
+    }
+
+    #usePage {
+      padding-top:5%;
+      height:400px;
+      color: black;
+      background-color: white;
+    }
+
+    #discussion {
+      padding-top:25px;
+      height:580px;
+      color: black;
+      background-color: #eeeeee;
+    }
+
+    #howPage {
+      padding-top:50px;
+      height:550px;
+      color: black; 
+      background-color: #dddddd;
+    }
+
+    #contactPage {
+      padding-top:50px;
+      height:750px;
+      color: black; 
+      background-color: #cccccc;
+    }
+    
+    .navbar{
+      background-color: #dddddd;
+      font-family: 'Open Sans Condensed', sans-serif;
+      color: white;
+      border-bottom: 0px;
+    }
+
+    .navbar-nav {
+      float:none;
+      margin:0 auto;
+      display: block;
+      text-align: center;
+    }
+
+    .navbar-nav > li {
+      display: inline-block;
+      float:none;
+    }
+
+    #vertical{
+      position:relative;
+      top:30%;    
+      left:0;
+      width:100%;
+    }
+
+    p{
+      font-family: 'Open Sans Condensed', sans-serif;
+    }
+
+    h1,h2,h3,h4{
+      font-family: 'Slabo 27px', serif;
+      color: white;
+    }
+
+
+    #modalDivider {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      div {
+        hr {
+          margin-top: 10px;
+        }
+      }
+      .divider-text {
+        margin: inherit;
+      }
+      @media (min-width: 768px) {
+        .divider-text {
+          margin: 0;
+        }
+      }
+    }
+
+  /*.li > .active > a{
+    border-bottom: 2px solid black;
+    background-color: red !important;
+  }*/
+
+  .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+    /*border-bottom: 2px solid black;*/
+    background-color: #cccccc !important;
+  }
+
+  /*img {
+    opacity: 0.5;
+    filter: alpha(opacity=50); 
+  }
+
+  img:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+  }*/
+
+  a:hover {
+    opacity: .5;
+  }
+
+  a{
+    color: #aaaaaa;
+  }
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+</style>
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <!-- <a class="navbar-brand" href="#">Isabel Lindmae</a> -->
+      </div>
+      <div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="./index.html">Back</a></li>
+            <li><a href="#aboutPage">About</a></li>
+            <li><a href="#imagePage">Prototypes</a></li>
+            <li><a href="#usePage">Features</a></li>
+            <li><a href="#discussion">How to use</a></li>
+            <li><a href="#howPage">Implementation</a></li>
+            <li><a href="#contactPage">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>    
+
+
+  <div id="aboutPage" class="container-fluid">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8"><br>
+        <center><h1><img src="./header.png"></h1></center><br>
+        <p><center><b><p>A R</b>eminder is an AR sticky notes application for iOS. </p><br>
+       <p> You place notes on objects in a house or office and can share those notes with other people. Objects can display a history of past notes that have been placed on it. You can set notes to appear repeteadly on any desired schedule. Set up chores, tasks, or reminders with your roomates, family, or just yourself. Each note displays the person who placed it, their name, and a specific color only associated with their notes. Once you have completed that task, just swipe on your phone and it will dissapear.</p></center></p>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+  </div>
+  <div id="imagePage" class="container-fluid">
+    <div class="row">
+      <div class="col-md-4"><center><img src="./fridge.jpg"></center></div>
+     	<div class="col-md-4"><center><img src="./dish.jpg"></center></div>
+     	<div class="col-md-4"><center><img src="./HW.jpg"></center></div>
+     </div>
+  </div>
+
+  <div id="usePage" class="container-fluid">
+    <div class="row">
+      <div class="col-md-2"></div>
+     	<div class="col-md-8">
+     		<h2>What it does:</h2>
+     		<p>Sticky notes will be associated with specific objects. The user will also be able to mark certain spaces as collaborative by listing users who can add or view notes in that area. All notes will be typed via keyboard and objects will have a history for all notes that have been attached to it. The user can choose weather not to display the history of an object. The notes will be stored into a database so that several users can access the same notes. In a collaborative space, each user will choose different colors so that different authors are clearly visible. When a user has completed the task, they simply swipe to remove it from their screen.
+     		</p><br>
+     		<p>AR is an excellent platform for virtual sticky notes as physical sticky notes can be lost or unnoticed. Furthermore, virtual sticky notes can also have a history associated with it which is helpful for tasks that are performed at certain time intervals (i.e cleaning your fridge every 3 months). Not many people will pay extra for sticky notes but most people have a smartphone so now all they have to do is click an object and then set a note!
+			</p><br>
+			<p>There are somewhat similar applications on the app store currently, one example being Stiktu; an AR application that allows users to virtually graifiti locations.</p>
+     	</div>
+     	<div class="col-md-2"></div>
+     </div>
+  </div>
+
+  <div id="discussion" class="container-fluid">
+    <div class="row">
+    	<div class="col-md-2"></div>
+    	<div class="col-md-8">
+    		<div class="row">
+    			<div class="col-md-4"><center><img src="./click.png"><br><p>1. Click to open a note.</p></center></div>
+     	<div class="col-md-4"><center><img src="./type.png"><br><p>2.Type your note.</p></center></div>
+     	<div class="col-md-4"><center><img src="./close.png"><br><p>3.Swipe to close a note.</p></center></div>
+     </div>
+    		</div>
+    	</div>
+    	<div class="col-md-2"></div>
+      
+  </div>
+
+
+  <div id="howPage" class="container-fluid">
+    <div class="row">
+      <div class="col-md-2"></div>
+     	<div class="col-md-8">
+     		<h2>Implementation:</h2>
+     		<p>Initially, A Reminder will be developed with Apple ARkit for AR compatible iOS. There might also be APIs that deal with collaborative locations that will be added. There will be a cloud database to store notes and who made them. There will need to be some way to 'tag' items, perhaps by location or with QR codes. <br><br>
+     			I will be looking at the following:
+     			<center><a href="https://github.com/hanleyweng/CoreML-in-ARKi" target="_blank">Script to detect objects and display 2D labels above them.</a></center>
+     			<center><a href="https://github.com/alunbestor/Boxify" target="_blank">Script to draw a 3D box in AR.</a></center>
+     			<center><a href="https://github.com/googlesamples/tango-examples-unity/tree/master/TangoWithMultiplayer" target="_blank">Script to have multiplayers on the same application.</a></center>
+     		</p><br>
+     		<p>I will be the only one on the team and in charge of all aspects of the project. My schedule is:</p>
+     		<p>1. Make the user able to place a box with AR.<br>
+     					2. Make the user able to show that box to nearby users.<br>
+     					3. Make the user be able to see boxes from players who are not nearby.<br>
+     					4. Make the user able to type into the box or delete it.<br>
+     					5. Implement a history to each item.<br>
+     					6. Add any additional QOL features.</p>
+     				 <br>
+     			<p>I intend to make this application usable by all ages and backgrounds by making it intuitive and simple with UI.</p>
+</p>
+     	</div>
+     	<div class="col-md-2"></div>
+     </div>
+  </div>
+
+
+  <div id="contactPage" class="container-fluid text-center">
+
+    <!-- <p>Click on the different Section links in the navbar to see the smooth scrolling effect.</p> -->
+    <div class="row" id="vertical">
+      <h1>Contact me</h1>
+      <div class="row text-center" id="modalDivider">
+        <div class="col-md-4"><hr></div>
+        <div class="col-md-4 divider-text"><p><i>The best place to contact me is thorugh email!</i></p></div>
+        <div class="col-md-4"><hr></div>
+      </div>
+      <br><br>
+      <div class="col-sm-3"></div>
+      <div class="col-sm-2">
+        <a href="mailto:me@IsabelLindmae.com" title="Email"><i class="fa fa-envelope fa-5x" aria-hidden="true"></i></a>
+
+      </div>
+      <div class="col-sm-2">
+        <a href="https://www.linkedin.com/in/IsabelLindmae/" title="LinkedIn"><i class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i></a>
+      </div>
+      <div class="col-sm-2">
+        <a href="./Resume.pdf" title="Print Resume"><i class="fa fa-print fa-5x" aria-hidden="true"></i></a>
+
+      </div>
+      <div class="col-sm-3"></div>
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function(){
+  // Add scrollspy to <body>
+  $('body').scrollspy({target: ".navbar", offset: 50});   
+
+  // Add smooth scrolling on all links inside the navbar
+  $("#myNavbar a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }  // End if
+  });
+});
+</script>
+
+</body>
+</html>
