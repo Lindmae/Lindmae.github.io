@@ -21,6 +21,34 @@
       background-size: cover;
       background-color: #cccccc;
     }
+
+    #videoPage {
+      padding-top:50px;
+      height:450px;
+      color: black; 
+      background-color: #bbbbbb;
+    }
+
+    #finalPage {
+      color: black; 
+      background-color: #cccccc;
+    }
+
+    #issuePage {
+      color: black; 
+      background-color: white;
+    }
+
+    #futurePage {
+      color: black; 
+      background-color: #aaaaaa;
+    }
+
+    #download {
+      color: black; 
+      background-color: #dddddd;
+    }
+
     #aboutPage {
       padding-top:25px;
       height:450px;
@@ -265,6 +293,107 @@ img {
      </div>
   </div>
 
+  <div id="finalPage" class="container-fluid">
+    <div class="row">
+      <div class="col-md-2"></div>
+     	<div class="col-md-8">
+     		<h2>What it does:</h2>
+     		<p>The final project is able to:</p>
+     		<p>1. Allow the user to create a reminder with tap gestures.<br>
+     					2. Allow the user to delete a reminder with swipe gestures.<br>
+     					3. Able to recognize ImageTargets.<br>
+     					4. Allow the user to change the color of notes.<br>
+     					5. Allow the user to change their name within the app.</p>
+     				 <br>
+     			<h2>How it works:</h2>
+     			<center><img src = "./ImageTarget.jpg" width="21%" height="21%"><img src = "https://media.giphy.com/media/l4Ep1PCvxr48hjhEk/giphy.gif" width="20%" height="20%"> <br>Unique ImageTargets</center><br><p>
+     				I used Unity and Vuforia to create the application. Vuforia is a package that allows the application to recognize things called ImageTargets. Vuforia comes with a handful of built in ImageTargets, which I have incorprorate a script into so when the camera on your phone sees an ImageTarget, it recognizes it. For now, the four ImageTargets that are provided have been hard coded into the program. I have added a script that allows you to dynamically spawn a sticky note prefab when an ImageTarget is found but I stuck to hardcoding the ImageTargets for now for simplicity. For future releases, the script can be implement with additional databases so you can have more ImageTargets and can customize them. <br>
+
+     				</p><center><img src = "./create1.PNG" width="20%" height="20%"><img src = "./create2.PNG" width="20%" height="20%"><img src = "https://media.giphy.com/media/xUNd9NiE9BF2flwSfm/giphy.gif" width="20%" height="20%"><br>Creating note</center><br><p>
+     				When a tap gesture is registered along with hovering over an ImageTarget, A textinput field appears. Here, the user is able to type in their reminder. Just clicking on the field produces the mobile keyboard. When the user is done typing and presses 'Done' they receive audio feedback that a note has been created and a note spawns ontop of the ImageTarget. What is happening behind the scenes is that the Note gameObject is being set to active, and the text within it is set to what the user entered.<br>
+
+     			</p><center><img src = "https://media.giphy.com/media/l4Epjcpc5LBl4qQne/giphy.gif" width="20%" height="20%"><br>Deleting note</center><br><p>
+     				To delete, the user must simply point at the object and swipe across it. The gesture interaction script shoots a ray when a user taps or swipes and returns the name of the object it touches. When deleteing, a ray is shot at the note and depending on the name of the note, which is based on its image target, the corresponding note will delete.<br>
+
+     			</p><center><img src = "./Delete.jpeg" width="20%" height="20%"><img src = "https://media.giphy.com/media/xUNda1CQNeo2n6c09O/giphy.gif" width="20%" height="20%"><br>Customizing note</center><br><p>
+     				At the top left corner of the application is a settings button. Upon clicking it, two fields and a button appear. Here, the user is able to set their name or choose a color. Once the user clicks "Done" a script activates that searches for all active notes in the scene and changes the name (which is found by tagging the header on creation) and color. The script also ensures that all future notes follow the prefrences set by the user.<br> 
+     			</p>
+</p></div>
+     	<div class="col-md-2"></div>
+     </div>
+  </div>
+  <div id="issuePage" class="container-fluid">
+    <div class="row">
+      <div class="col-md-2"></div>
+     	<div class="col-md-8">
+     		<h2>Issues I ran into:</h2>
+     		<p><br>
+				When I first started developing the program I tried using only XCode. After about a week doing so, I started to realize how hard it was to create these boxes and have notes appear inside them. With some research, I found that the newest version of Unity supported AR and read about the Vuforia package. When I switch to Vuforia I did lose one main component that I was excited for, and that was being able to place a note anywhere. Vuforia allowed me to make gameObjects much easier but my notes were constrained in location and could only be somewhere that an ImageTarget exists. <br><br>
+				Once I was using Vuforia, another obstacle became registering touch. At first I could not get touch to work at all, and realized I made a silly mistake of not putting colliders onto ImageTargets. Once touching was working, the problem became that no matter where I was pointing the camera, the moment I touched all ImageTargets became active, not just the intended one. The same problem when I deleted a note, it caused all notes to be deleted. With some further research I read about raycasting. Now when the user tapped or dragged across their screen, I could print the exact object they had touched.<br><br>
+				Another problem came with customization. Initally when the user changed their name or their color of choice, only those notes which were active would change. I realized it was because I was searching for gameObjects with specific tags and FindGameObjectbyTag only works for active objects! So again I rewrote everything and this time I had it so when you change your name or color, all exisiting notes change and all future notes access the new color that is stored and use it.<br><br>
+				The final and biggest problem I had was saving the application data so when you quit and reopen, all notes remained. I learned how to serialize everything and use playerPrefs but for some reason, playerPrefs were saved on the desktop but not on mobile.I thought it worked as I had been using my laptop and webcam to test but when I actually tested it on my phone, it was much too late for me to go through all my code and find the problem.<br><br>
+
+				Making the application collaborative required saving all the game data into a google sheet or somesort of database. I also did not get around to this.
+				</p>
+</p></div>
+     	<div class="col-md-2"></div>
+     </div>
+  </div>
+
+<div id="futurePage" class="container-fluid">
+    <div class="row">
+      <div class="col-md-2"></div>
+     	<div class="col-md-8">
+     		<h2>Future ideas:</h2>
+     		<p><br>
+				In the future, the app has many ways to expand. The first would be the use of ImageTargets, as mentioned earlier there is a script in the project that allows you to dynamically spawn notes. If you create a huge database of custom ImageTargets, you can include the database in the application and then allow yourself to have more than 4 notes at a time. Other ideas might be to have multiple notes to one ImageTarget. I wanted to incorporate a history to each note as well, something I didn't have time for in this build.<br><bR>
+				I can also add more customization options, such as changing font or size of notes. Maybe even make it so you can edit already created notes.<br><br>
+				I also really wanted to make this a collaborative application which can be implemented using an online database or google sheets.
+				</p>
+</p></div>
+     	<div class="col-md-2"></div>
+     </div>
+  </div>
+			
+     	<div id="download" class="container-fluid">
+    <div class="row">
+      <div class="col-md-2"></div>
+     	<div class="col-md-8">
+     		<h2>Download:</h2>
+     		<p><br>
+				Assets:<br>
+				<a href="https://forum.unity.com/threads/simple-swipe-and-tap-mobile-input.376160/">Touch detection</a><br>
+				Fonts from google<br>
+				<a href="https://www.assetstore.unity3d.com/en/#!/content/54116">Sounds</a><br>
+				<a href="https://developer.vuforia.com/forum/faq/unity-how-can-i-dynamically-attach-my-3d-model-image-target">MyModelInstantiator</a><br>
+				<a href="http://moziru.com/images/gears-clipart-transparent-background-19.png">Gear</a><br><br>
+				Used the following videos for saving/loading data:<br>
+				<a href="https://www.youtube.com/watch?v=MVmWbmN9Iv0">1</a><br>
+				<a href="https://www.youtube.com/watch?v=LBs6qOgCDOY&t=1s">2</a><br>
+				<a href="https://www.youtube.com/watch?v=Rh42EYHMkNs">3</a><br>
+				<br>
+				How to download:<br>
+				Open the project in Unity. Build and run as an iOS application. When Xcode opens, set a unique bundle identifier and enable automatic manage signing. Make sure your phone is selected in the top left corner and press play. The application will launch by itself.<br><br>
+				<center> <a href="https://drive.google.com/drive/folders/1svphBOy2vtAXaudUO8bEXDwdGAeFsWrr?usp=sharing">Download here</a> </center>
+				</p>
+</p></div>
+     	<div class="col-md-2"></div>
+     </div>
+  </div>
+
+
+<div id="videoPage" class="container-fluid text-center">
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6"><br>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="//www.youtube.com/embed/Ymt8Umt4Rww"></iframe>
+        </div>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+
+  </div>
 
   <div id="contactPage" class="container-fluid text-center">
 
