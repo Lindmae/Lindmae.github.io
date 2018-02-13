@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Isabel Lindmae</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/20d7f0d9a7.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Playfair+Display" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+
+  body{
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Josefin Slab', serif;
+  }
+
+  p {
+    font-family: 'Playfair Display', serif;
+    font-size: 12px;
+  }
+
+  sub { 
+    font-family: 'Playfair Display', serif;
+  }
+
+  .navBar{
+    font-family: 'Josefin Slab', serif;
+    font-size: 16px;
+
+  }
+
+</style>
+</head>
+<body class=" w3-light-gray">
+  <br>
+  <div class="container-fluid ">
+    <div class="row ">
+      <div class="col-md-12"><br>
+        <h1>
+          Visualization and Visual Analytics
+        </h1>
+        <div class="w3-bar w3-dark-gray navBar navbar-fixed-top">
+          <a href="./vis.html" class="w3-bar-item w3-button">Home</a>
+          <a href="#aboutPage" class="w3-bar-item w3-button">About</a>
+          <a href="#dataPage" class="w3-bar-item w3-button">Data</a>
+          <a href="#downloadPage" class="w3-bar-item w3-button">Download</a>
+          <a href="#analysisPage" class="w3-bar-item w3-button">Analysis</a>
+          <a href="#videoPage" class="w3-bar-item w3-button">Video</a>
+  </div>
+  <div class="row  w3-light-gray">
+    <div class="col-md-12"><br><br>
+      <center></center>
+      <div id="aboutPage" class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <img src="VP1.png" style="width:100%">
+
+          <b><h4><center>About</center></h4></b>
+          <p>
+            Link: <a href="https://lindmae.shinyapps.io/Project1/" target="blank">https://lindmae.shinyapps.io/Project1/</a><br><br>
+
+            How to use: To navigate through the different sets of data, use the sidebar on the left. To close or open the sidebar, click the icon located on the top left part of the page. Once you have chosen a dataset, you can click through some tabs found on the boxes within the main page to change how you view the data (i.e bar chart vs pie chart).<br><br>
+
+            What you can do: Explore data related to the London 1854 cholera outbreaks and deaths. Find data on attacks vs deaths, census data, fatality data, and a map showing locations of deaths and water pumps. Compare and contrast the effects that the 1854 cholera outbreak had on different age groups, genders, or locations.<br><br>
+
+            <br>
+          </p>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+  </div>
+
+ <div class="row  w3-light-gray">
+    <div class="col-md-12"><br><br>
+      <center></center>
+      <div id="dataPage" class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8"><center>
+          <img src="VP1data.png" style="height:50%; width: 50%">
+
+          <b><h4>Data</h4></b></center>
+          <p>
+            Data used: Attacks vs deaths due to Cholera, fatality data based by age group, UK census data in 1851, locations of Cholera deaths, locations of water pumps.<br><br>
+
+            Data found: Data put together by Robin Wilson (robin@rtwilson.com, www.rtwilson.com/academic).<br><br>
+
+            Data modifications: Added total deaths and attacks columns to attack vs death data. Modified dates to be more readable by R studio. Added an overall sum to each row for census data.<br><br>
+
+            Libraries used: <br>
+            1.shiny<br>
+            2.DT: used to create data tables<br>
+            3.ggplot2: used to plot all graphs<br> 
+            4.scalesL used for brewer color scales.<br>
+            5.shinydashboard: used to create a more fluid layout<br>
+            6.leaflet: used to draw a map of london with markers on top.<br>
+            7.reshape2: used to melt together data so drawing a ggplot with multiple lines is much easier.<br>
+            <br><br>
+
+            <br>
+          </p>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row  w3-light-gray">
+    <div class="col-md-12"><br><br>
+      <center></center>
+      <div id="downloadPage" class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8"><center>
+          <img src="VP1download.png" style="height:100%; width: 100%">
+
+          <b><h4>Download</h4></b></center>
+          <p>
+            Link: <a href="https://drive.google.com/file/d/1zvwNeFln__a4p-Z8A8VH82gENO3JLHQa/view?usp=sharing" target="blank">Click here to download from Google drive.</a><br><br>
+
+            How to run:<br>
+            1. Download R (2017-11-30 Kite-Eating Tree) from a site such as https://cran.cnr.berkeley.edu/ <br>
+            2. Download R-Studio (1.1.383) from https://www.rstudio.com/products/rstudio/download/<br>
+            3. Download the project (link above)<br>
+            4. Unzip the downloaded file and double click the "Project 1.Rproj" file to open the project in R Studio. If this does not work, open R Studio and simply navigate to the unzipped folder and click it.<br>
+            5. Once the project is open in R Studio, click the "Run App" button found at the top. 
+            <br>
+
+            <br>
+          </p>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row  w3-light-gray">
+    <div class="col-md-12"><br><br>
+      <center></center>
+      <div id="analysisPage" class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8"><center>
+          <img src="VP1analysis.jpg" style="height:60%; width: 60%">
+
+          <b><h4>Analysis</h4></b></center>
+          <div class="row">
+            <div class="col-md-6">
+              <img src="VP1A1.png" style="height:100%; width: 100%">
+            </div>
+            <div class="col-md-6"><BR><BR>
+              <p>1. In the week between August 28 and September 4, there was a huge jump in attacks and deaths resulting from Cholera. Specifically on August 28, there were only 6 total attacks and 8 total deaths. By September 4th, there were a total of 356 deaths and 432 attacks!</p>
+              <img src="VP1A2.png" style="height:100%; width: 100%">
+              <img src="VP1A3.png" style="height:100%; width: 100%">
+            </div>
+          </div><br><br>
+
+
+
+          
+            <center><img src="VP1A4.png" style="height:100%; width: 100%"></center>
+            <center><p>2. Looking at census data, there are many more females than males that are aged 20 to 29. <br><br></p></center><br><br>
+
+            <center><img src="VP1A5.png" style="height:100%; width: 100%"></center>
+            <center><p>3. Fatalities affected men and women equally and the most common age group affected was mostly the elderly.<br><br></p></center><br><br>
+
+            <center><img src="VP1A6.png" style="height:100%; width: 100%"></center>
+            <center><p>4. There was one pump that seemed to serve the majority of of the nieghborhood, close to current day Broadwick Street in London and located centrally to the neighborhood. Near that pump, deaths were incredibly high. Other pumps that are seen more on the outskirts of the attacks must have been used less as there are not as many outbreaks near it (or the water was not infected).<br><br></p></center><br><br>
+
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+  </div>
+  <div id="videoPage" class="container-fluid text-center">
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6"><br>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="//www.youtube.com/embed/t-P-sdYShLU"></iframe>
+        </div>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+
+  </div>
+
+
+</div>
+</div>
+</div>
+</div>
+
+
+</body>
+</html>
